@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class HomeWork3 {
@@ -19,8 +20,9 @@ public class HomeWork3 {
         // Перейдите в раздел Wiki проекта
         $("#wiki-tab").click();
         // Убедитесь, что в списке страниц (Pages) есть страница SoftAssertions
-        $(".Link--muted.js-wiki-more-pages-link.btn-link.mx-auto.f6").click();
+        $("#wiki-pages-filter").setValue("SoftAssertions");
         // Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
-        $$("[data-filterable-for=wiki-pages-filter] li").get(17).shouldHave(text("SoftAssertions")).click();
+        $("#wiki-pages-box").$(byText("SoftAssertions")).click();
+        $("div#wiki-body").shouldHave(text("3. Using JUnit5 extend test class:"));
     }
 }
