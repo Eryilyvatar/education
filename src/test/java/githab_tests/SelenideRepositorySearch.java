@@ -10,7 +10,6 @@ public class SelenideRepositorySearch {
 
     @Test
     void shouldFineSelenideRepositoryAtTheTop(){
-        Configuration.holdBrowserOpen = true;
         // открыть главную страницу
         open("https://github.com/");
         // ввести в поле поиска selenide и нажать enter
