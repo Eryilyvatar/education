@@ -1,4 +1,4 @@
-package githab_tests;
+package selenide;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
