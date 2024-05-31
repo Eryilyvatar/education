@@ -2,6 +2,7 @@ package selenide;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.conditions.Text;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -16,5 +17,10 @@ public class HomeWork4 {
         $(byText("Solutions")).hover();
         $(byText("Enterprise")).click();
         $(byText("The AI-powered")).shouldHave(text("developer platform."));
+    }
+
+    @Test
+    void useless_test () {
+        Assertions.assertTrue(3>2);
     }
 }
