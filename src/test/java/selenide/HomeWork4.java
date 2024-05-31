@@ -18,9 +18,4 @@ public class HomeWork4 {
         $(byText("Enterprise")).click();
         $(byText("The AI-powered")).shouldHave(text("developer platform."));
     }
-
-    @Test
-    void useless_test () {
-        Assertions.assertTrue(3>2);
-    }
 }
