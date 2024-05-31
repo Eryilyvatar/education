@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 public class HomeWork5 {
         @Test
         void useless_test () {
-            Assertions.assertTrue(3>2);
+            int i = 42;
+            Assertions.assertTrue(i>2);
         }
 }
