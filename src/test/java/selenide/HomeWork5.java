@@ -9,6 +9,7 @@ public class HomeWork5 {
         @Test
         void useless_test () {
             int i = 42;
-            Assertions.assertTrue(i>2);
+            int y = 2;
+            Assertions.assertTrue(i>y);
         }
 }
