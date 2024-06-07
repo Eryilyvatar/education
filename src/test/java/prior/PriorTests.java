@@ -12,8 +12,8 @@ public class PriorTests {
         Configuration.holdBrowserOpen = true;
 
         open("https://www.ibank.priorbank.by/");
-        $("[name=UserName]").setValue("softh");
-        $("[name=Password]").setValue("123/*---").pressEnter();
+        $("[name=UserName]").setValue("kozachenkoartem");
+        $("[name=Password]").setValue("Nazafi95prioR").pressEnter();
     }
 }
 
