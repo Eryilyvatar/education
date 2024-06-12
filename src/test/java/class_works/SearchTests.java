@@ -1,4 +1,4 @@
-package selenide;
+package class_works;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ public class SearchTests {
     @Test
     void successfulSearchTest() {
         open("https://www.google.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
+        $("[name=q]").setValue("home_works").pressEnter();
         $("[id=search]").shouldHave(text("https://selenide.org"));
     }
 }

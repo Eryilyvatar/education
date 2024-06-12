@@ -1,4 +1,4 @@
-package selenide;
+package home_works;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ public class HomeWork3 {
         // Откройте страницу Selenide в Github
         open("https://github.com/");
         $(".search-input").click();
-        $("[name=query-builder-test]").setValue("selenide").pressEnter();
+        $("[name=query-builder-test]").setValue("home_works").pressEnter();
         $$("div.Box-sc-g0xbh4-0.kXssRI div.Box-sc-g0xbh4-0.Qaxme").first().$("a").click();
         // Перейдите в раздел Wiki проекта
         $("#wiki-tab").click();

@@ -1,4 +1,4 @@
-package selenide;
+package class_works;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ public class SelenideRepositorySearch {
         // ввести в поле поиска selenide и нажать enter
         $("[class=search-input]").click();
         $("[class=search-input expanded]");
-        $("[name=query-builder-test]").setValue("selenide").pressEnter();
+        $("[name=query-builder-test]").setValue("home_works").pressEnter();
         // кликнуть на первый репозитории из списка найденых
         $$("div.Box-sc-g0xbh4-0.kXssRI div.Box-sc-g0xbh4-0.Qaxme").first().$("a").click();
         // проверка: заголовок selenide/selenide

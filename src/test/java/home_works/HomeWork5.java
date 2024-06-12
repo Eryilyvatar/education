@@ -1,4 +1,4 @@
-package selenide;
+package home_works;
 
 
 import org.junit.jupiter.api.Assertions;
