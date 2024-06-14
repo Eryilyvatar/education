@@ -35,5 +35,11 @@ public class HomeWork6 {
         $("#userEmail").setValue(userEmail);
         $(byText("Male")).click();
         $("#userNumber").setValue(userNumber);
+        $("#dateOfBirthInput").click();
+        $(".react-datepicker__month-select").click();
+        $(byText("October")).click();
+        $(".react-datepicker__year-select").click();
+        $(byText("1989")).click();
+        $(".react-datepicker__day.react-datepicker__day--010").click();
     }
 }
