@@ -24,4 +24,5 @@ public class HomeWork3 {
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $("div#wiki-body").shouldHave(text("3. Using JUnit5 extend test class:"));
     }
+
 }
