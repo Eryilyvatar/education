@@ -3,11 +3,6 @@ package home_works;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-
 public class HomeWork7 extends TestBase {
 
 
@@ -22,7 +17,7 @@ public class HomeWork7 extends TestBase {
         String monthBirthUser = "October";
         String yearBirthUser = "1989";
         String dayBirthUser = "10";
-        String userSubjects = "java, selenium, selenide, junit5";
+        String userSubjects = "Math";
         String hobbie1 = "Sports";
         String hobbie2 = "Reading";
         String hobbie3 = "Music";
@@ -38,22 +33,24 @@ public class HomeWork7 extends TestBase {
                 .setEmail(userEmail)
                 .setGender(userGender)
                 .setNumber(userNumber)
-                .setBirthDate(dayBirthUser, monthBirthUser, yearBirthUser);
+                .setBirthDate(dayBirthUser, monthBirthUser, yearBirthUser)
+                .setUserSubjects(userSubjects)
+                .setUserHobbie(hobbie1, hobbie2, hobbie3)
+                .setUserPicture(pictureUrl)
+                .setUserAddres(userAddress)
+                .setUserState(userState)
+                .setUserCity(userCity)
+                .submitUserData()
+                .verifyResultModalAppears()
+                .verifyResultData("Student Name", firstName + " " + lastName)
+                .verifyResultData("Student Email", userEmail)
+                .verifyResultData("Gender", userGender)
+                .verifyResultData("Mobile", userNumber)
+                .verifyResultData("Date of Birth", dayBirthUser + " " + monthBirthUser + "," + yearBirthUser)
+                .verifyResultData("Hobbies", hobbie1 + ", " + hobbie2 + ", " + hobbie3)
+                .verifyResultData("Picture", pictureUrl)
+                .verifyResultData("Address", userAddress)
+                .verifyResultData("State and City", userState + " " + userCity);
 
-
-        $("#subjectsContainer input").setValue(userSubjects);
-        $(byText(hobbie1)).click();
-        $(byText(hobbie2)).click();
-        $(byText(hobbie3)).click();
-        $("#uploadPicture").uploadFile(new File("src/test/resources/" + pictureUrl));
-        $("#currentAddress").setValue(userAddress);
-        $(byText("Select State")).click();
-        $(byText(userState)).click();
-        $(byText("Select City")).click();
-        $(byText(userCity)).click();
-        $("#submit").click();
-
-
-        registrationPage.verifyResultModalAppears();
     }
 }
