@@ -3,6 +3,7 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import pages.componenents.CalendarComponent;
 import pages.componenents.RegistrationResultModal;
+import pages.componenents.UploadPicture;
 
 import java.io.File;
 
@@ -13,6 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationPage {
     CalendarComponent calendarComponent = new CalendarComponent();
     RegistrationResultModal registrationResultModal = new RegistrationResultModal();
+    UploadPicture uploadPicture = new UploadPicture();
 
     private final String TITLE_TEXT = "Student Registration Form";
     private final SelenideElement firstNameInput = $("#firstName"),
@@ -81,7 +83,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setUserPicture(String value){
-        $("#uploadPicture").uploadFile(new File("src/test/resources/" + value));
+        uploadPicture.setPicture(value);
 
         return this;
     }
