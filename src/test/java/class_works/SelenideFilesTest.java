@@ -1,5 +1,6 @@
 package class_works;
 
+import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
@@ -21,4 +22,12 @@ public class SelenideFilesTest {
             assertThat(textContent).contains("Selenide is based on and is compatible to Selenium WebDriver 4.0+");
         }
     }
+
+    @Test
+    void selenideUploadFile() {
+        open("https://fineuploader.com/demos.html");
+        $("input[type='file']").uploadFromClasspath("my_nero_picture.jpg");
+        $("div.qq-file-info").shouldHave(Condition.text("my_nero_picture.jpg"));
+    }
+
 }
