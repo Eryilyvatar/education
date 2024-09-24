@@ -10,11 +10,14 @@ repositories {
 dependencies {
     testImplementation (
             "com.codeborne:selenide:7.3.1",
-            "com.codeborne:pdf-test:1.9.0",
-            "com.codeborne:xls-test:1.7.1",
+            'com.codeborne:pdf-test:1.5.0',
+            'com.codeborne:xls-test:1.4.3',
             "org.assertj:assertj-core:3.26.3",
             "org.junit.jupiter:junit-jupiter:5.10.1",
-            "org.slf4j:slf4j-simple:2.0.13")
+            "org.slf4j:slf4j-simple:2.0.13",
+            'com.opencsv:opencsv:5.7.1',
+            'com.google.code.gson:gson:2.10'
+    )
 }
 
 compileTestJava {
