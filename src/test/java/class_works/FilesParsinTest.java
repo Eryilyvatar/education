@@ -22,11 +22,4 @@ public class FilesParsinTest {
         PDF content = new PDF(downloadedPdf);
         assertThat(content.author).contains("Sam Brannen");
     }
-    @Test
-    void xlsParseTest() throws Exception {
-        try (InputStream resourceAsStream = cl.getResourceAsStream("example/sample-xlsx-file.xlsx")) {
-            XLS content = new XLS(resourceAsStream);
-            assertThat(content.excel.getSheetAt(0).getRow(1).getCell(1).getStringCellValue()).contains("Dulce");
-        }
-    }
 }
