@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">19</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">9</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.925s</div>
+<div class="counter">1m26.76s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">52%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,57 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/class_works.FilesParsinTest.html">FilesParsinTest</a>.
+<a href="classes/class_works.FilesParsinTest.html#csvParseTest()">csvParseTest()</a>
+</li>
+<li>
+<a href="classes/class_works.FilesParsinTest.html">FilesParsinTest</a>.
+<a href="classes/class_works.FilesParsinTest.html#jsonParseTest()">jsonParseTest()</a>
+</li>
+<li>
+<a href="classes/class_works.FilesParsinTest.html">FilesParsinTest</a>.
+<a href="classes/class_works.FilesParsinTest.html#pdfParseTest()">pdfParseTest()</a>
+</li>
+<li>
+<a href="classes/class_works.FilesParsinTest.html">FilesParsinTest</a>.
+<a href="classes/class_works.FilesParsinTest.html#xlsParseTest()">xlsParseTest()</a>
+</li>
+<li>
+<a href="classes/class_works.FilesParsinTest.html">FilesParsinTest</a>.
+<a href="classes/class_works.FilesParsinTest.html#zipParseTest()">zipParseTest()</a>
+</li>
+<li>
+<a href="classes/class_works.SearchTests.html">SearchTests</a>.
+<a href="classes/class_works.SearchTests.html#successfulSearchTest()">successfulSearchTest()</a>
+</li>
+<li>
+<a href="classes/class_works.SelenideFilesTest.html">SelenideFilesTest</a>.
+<a href="classes/class_works.SelenideFilesTest.html#selenideUploadFile()">selenideUploadFile()</a>
+</li>
+<li>
+<a href="classes/class_works.SelenideRepositorySearch.html">SelenideRepositorySearch</a>.
+<a href="classes/class_works.SelenideRepositorySearch.html#shouldFineSelenideRepositoryAtTheTop()">shouldFineSelenideRepositoryAtTheTop()</a>
+</li>
+<li>
+<a href="classes/home_works.HomeWork3.html">HomeWork3</a>.
+<a href="classes/home_works.HomeWork3.html#pageSoftAssertions()">pageSoftAssertions()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,19 +123,39 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
+<a href="packages/class_works.html">class_works</a>
+</td>
+<td>12</td>
+<td>8</td>
+<td>0</td>
+<td>1m6.01s</td>
+<td class="failures">33%</td>
+</tr>
+<tr>
+<td class="failures">
 <a href="packages/home_works.html">home_works</a>
 </td>
+<td>5</td>
 <td>1</td>
 <td>0</td>
+<td>20.738s</td>
+<td class="failures">80%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/junit.html">junit</a>
+</td>
+<td>2</td>
 <td>0</td>
-<td>8.925s</td>
+<td>0</td>
+<td>0.011s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -107,12 +171,132 @@
 <tbody>
 <tr>
 <td class="success">
+<a href="classes/class_works.BestContributorToSelenide.html">class_works.BestContributorToSelenide</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>9.319s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/class_works.FilesParsinTest.html">class_works.FilesParsinTest</a>
+</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>7.578s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/class_works.SearchTests.html">class_works.SearchTests</a>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>6.329s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/class_works.SelenideFilesTest.html">class_works.SelenideFilesTest</a>
+</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>4.306s</td>
+<td class="failures">50%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/class_works.SelenideRepositorySearch.html">class_works.SelenideRepositorySearch</a>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>6.363s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/class_works.SelenideTest.html">class_works.SelenideTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>4.692s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/class_works.TextBoxTests.html">class_works.TextBoxTests</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>27.425s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/home_works.HomeWork3.html">home_works.HomeWork3</a>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>5.724s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/home_works.HomeWork4.html">home_works.HomeWork4</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>4.363s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/home_works.HomeWork5.html">home_works.HomeWork5</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.022s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/home_works.HomeWork6.html">home_works.HomeWork6</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>5.737s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
 <a href="classes/home_works.HomeWork7.html">home_works.HomeWork7</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>8.925s</td>
+<td>4.892s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/junit.FirstJUnitTest.html">junit.FirstJUnitTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.011s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -126,7 +310,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 26 сент. 2024 г., 21:03:35</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 30 сент. 2024 г., 22:01:26</p>
 </div>
 </div>
 </body>
