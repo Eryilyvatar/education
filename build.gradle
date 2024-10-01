@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id'io.qameta.allure' version '2.12.0'
+    id 'io.qameta.allure' version '2.12.0'
 }
 
 group 'org.example'
@@ -26,7 +26,7 @@ repositories {
 
 
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:7.3.1",
             'com.codeborne:pdf-test:1.5.0',
             'com.codeborne:xls-test:1.4.3',
